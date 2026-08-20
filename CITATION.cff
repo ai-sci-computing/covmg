@@ -1,0 +1,49 @@
+cff-version: 1.2.0
+title: "covmg: gauge-covariant geometric multigrid for the connection Laplacian"
+message: "If you use this software or results produced with it, please cite the accompanying paper."
+type: software
+authors:
+  - family-names: "Knöppel"
+    given-names: "Felix"
+    email: "f.j.knoeppel@gmail.com"
+repository-code: "https://github.com/ai-sci-computing/covmg"
+license-url: "https://github.com/ai-sci-computing/covmg/blob/main/LICENSE"
+version: "0.0.1"
+date-released: "2026-08-20"
+keywords:
+  - connection Laplacian
+  - magnetic Laplacian
+  - Bochner Laplacian
+  - geometric multigrid
+  - gauge covariance
+  - eigenvalue problem
+  - LOBPCG
+  - lattice gauge theory
+  - vortex filament extraction
+  - fluid simulation
+abstract: >-
+  An interactive Covector Fluids solver on a MAC grid whose vortex structure is
+  extracted live as discrete vortex filaments (Weissmann–Pinkall), built around
+  covMG-LOBPCG: a gauge-covariant geometric multigrid eigensolver for the
+  smallest eigenpair of the U(1) connection Laplacian, with a parallel-transport
+  (covariant subdivision) prolongation, its exact adjoint as restriction, and an
+  A-energy-optimal coarse-correction step. The hierarchy is built in one O(N)
+  pass from the operator's own edge data, gauge-equivariance holds by
+  construction, and the outer iteration count does not grow under refinement, so
+  the solver pulls ahead of zero-setup polynomial acceleration under refinement
+  on abelian and non-abelian operator families and on the wake operators
+  themselves. Includes an SU(N) generalization and a Wilson-action Monte Carlo
+  harness.
+preferred-citation:
+  type: article
+  title: >-
+    Zero-Setup Gauge-Covariant Multigrid for Connection-Laplacian Ground States
+  authors:
+    - family-names: "Knöppel"
+      given-names: "Felix"
+      email: "f.j.knoeppel@gmail.com"
+  year: 2026
+  month: 8
+  # TODO(release): add `doi:` and `journal:`/`notes: arXiv:XXXX.XXXXX` once the
+  # preprint is posted. Deliberately absent rather than guessed -- nothing in
+  # this repository should carry an identifier that does not resolve.

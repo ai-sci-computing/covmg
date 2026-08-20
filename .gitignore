@@ -1,0 +1,54 @@
+# Build output
+/build/
+/build-*/
+*.o
+*.a
+*.dylib
+*.so
+
+# Doxygen output
+/docs/html/
+/docs/latex/
+/docs/xml/
+
+# Editor / OS
+.DS_Store
+.vscode/
+.idea/
+compile_commands.json
+
+# Logs / scratch
+*.log
+
+# Python bytecode
+__pycache__/
+
+# Demo output artifacts (regenerate via ring_demo + animate_filaments.py)
+*.gif
+*.mp4
+/frames*.txt
+/ring_*.txt
+
+# Reference PDFs (copyrighted, large)
+references/*.pdf
+
+# Local tool state
+.claude/
+
+# Generated GIFs / sim visualizations (discoverable, not committed)
+gifs/
+
+# Dear ImGui per-run window layout (rewrites itself; not version-controlled)
+imgui.ini
+
+# Fetched arXiv LaTeX source for the PTMG audit (copyrighted, reproducible)
+references/kalkreuter1994review-src/
+tools/galerkin_setup/galerkin_setup_bench
+references/txt/
+
+# frozen-operator dumps (raw data, local-only like the bench logs)
+*.glat
+
+# Operator dumps and exports (regenerable; large)
+*.glat
+*.mtx
